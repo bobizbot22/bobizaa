@@ -1,4 +1,4 @@
-9import { promises } from 'fs'
+import { promises } from 'fs'
 import { join } from 'path'
 import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
@@ -33,7 +33,7 @@ const defaultMenu = {
   header: '┏━━⊜ *_%category_* ',
   body: '┃⋄ %cmd %isdiamond %isPremium',
   footer: '┗━━━━━━━━⬣\n',
-  after: '*إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول .+ شارك فيديوهات صاحب البوت تشجيعا له ان كان هذا البوت قد نال إعجابك*\n',
+  after: '*إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول . لذا إن واجهتك أي مشكلة لا تخجل من سؤال صاحب البوت .رقمه سوف تجده في الأسفل + شارك فيديوهات صاحب البوت تشجيعا له ان كان هذا البوت قد نال إعجابك*\n+212717457920',
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
@@ -143,7 +143,7 @@ sourceUrl: 'https://instagram.com/noureddine_ouafy',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
-conn.sendMessage(m.chat, {audio: { url: 'https://a.uguu.se/mmHXbzrD.mp3' }, mimetype:'audio/mpeg', ptt:true }, {quoted:m})
+conn.sendMessage(m.chat, {audio: { url: https://a.uguu.se/mmHXbzrD.mp3' }, mimetype:'audio/mpeg', ptt:true }, {quoted:m})
     /*conn.sendFile(m.chat, 'menu.png', text.trim(), m, null, )
     /*conn.sendButton(m.chat, text.trim(), '▢ DyLux  ┃ ᴮᴼᵀ\n▢ Sígueme en Instagram\nhttps://www.instagram.com/fg98_ff', pp, [
       ['ꨄ︎ Apoyar', `${_p}donate`],
@@ -173,4 +173,4 @@ function clockString(ms) {
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [d, 'd ', h, 'h ', m, 'm '].map(v => v.toString().padStart(2, 0)).join('')
-}
+      }
